@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- Main background gradient: oat cream → botanical green → terracotta -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5e6d3"/>
+      <stop offset="35%" stop-color="#e8d5b8"/>
+      <stop offset="60%" stop-color="#4a7c59"/>
+      <stop offset="85%" stop-color="#2d5a3d"/>
+      <stop offset="100%" stop-color="#c4724e"/>
+    </linearGradient>
+    <!-- Warm overlay -->
+    <radialGradient id="warmGlow" cx="30%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#f5e6d3" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2d5a3d" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Terracotta accent glow -->
+    <radialGradient id="terraGlow" cx="80%" cy="70%" r="40%">
+      <stop offset="0%" stop-color="#c4724e" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#c4724e" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Soft gold glow -->
+    <radialGradient id="goldGlow" cx="50%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#d4a843" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#d4a843" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Base gradient -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+  <!-- Warm overlays -->
+  <rect width="1920" height="1080" fill="url(#warmGlow)"/>
+  <rect width="1920" height="1080" fill="url(#terraGlow)"/>
+  <rect width="1920" height="1080" fill="url(#goldGlow)"/>
+  <!-- Abstract organic shapes - large leaf forms -->
+  <ellipse cx="350" cy="300" rx="280" ry="180" fill="#2d5a3d" opacity="0.12" transform="rotate(-25 350 300)"/>
+  <ellipse cx="1500" cy="700" rx="320" ry="200" fill="#c4724e" opacity="0.1" transform="rotate(15 1500 700)"/>
+  <ellipse cx="900" cy="500" rx="400" ry="250" fill="#4a7c59" opacity="0.08" transform="rotate(-10 900 500)"/>
+  <!-- Flowing organic curves suggesting ingredients -->
+  <path d="M0 600 Q300 450 600 550 Q900 650 1200 500 Q1500 350 1920 480" fill="none" stroke="#f5e6d3" stroke-width="2" opacity="0.2"/>
+  <path d="M0 700 Q400 550 800 650 Q1200 750 1600 600 Q1800 520 1920 560" fill="none" stroke="#d4a843" stroke-width="1.5" opacity="0.15"/>
+  <path d="M0 800 Q480 700 960 780 Q1440 860 1920 720" fill="none" stroke="#f5e6d3" stroke-width="1" opacity="0.1"/>
+  <!-- Grain/seed scattered shapes -->
+  <g opacity="0.08" fill="#f5e6d3">
+    <ellipse cx="200" cy="200" rx="30" ry="12" transform="rotate(45 200 200)"/>
+    <ellipse cx="500" cy="150" rx="25" ry="10" transform="rotate(-30 500 150)"/>
+    <ellipse cx="800" cy="250" rx="35" ry="14" transform="rotate(20 800 250)"/>
+    <ellipse cx="1100" cy="180" rx="28" ry="11" transform="rotate(-15 1100 180)"/>
+    <ellipse cx="1400" cy="300" rx="32" ry="13" transform="rotate(35 1400 300)"/>
+    <ellipse cx="1700" cy="220" rx="26" ry="10" transform="rotate(-25 1700 220)"/>
+  </g>
+  <!-- Leaf silhouettes -->
+  <g opacity="0.06" fill="#2d5a3d">
+    <path d="M150 800 Q200 700 180 600 Q160 700 150 800Z" transform="rotate(10 150 700)"/>
+    <path d="M1750 150 Q1800 80 1780 10 Q1760 80 1750 150Z" transform="scale(2) translate(-700 20)"/>
+  </g>
+  <!-- Circular bokeh-like elements -->
+  <circle cx="300" cy="400" r="60" fill="#d4a843" opacity="0.05"/>
+  <circle cx="1600" cy="300" r="80" fill="#f5e6d3" opacity="0.06"/>
+  <circle cx="960" cy="800" r="100" fill="#c4724e" opacity="0.04"/>
+  <circle cx="700" cy="200" r="45" fill="#4a7c59" opacity="0.06"/>
+  <circle cx="1300" cy="600" r="70" fill="#d4a843" opacity="0.04"/>
+  <!-- Subtle dot pattern in lower section -->
+  <g opacity="0.04" fill="#f5e6d3">
+    <circle cx="100" cy="950" r="3"/><circle cx="200" cy="980" r="2.5"/>
+    <circle cx="320" cy="960" r="3.5"/><circle cx="450" cy="990" r="2"/>
+    <circle cx="580" cy="950" r="3"/><circle cx="720" cy="970" r="2.5"/>
+    <circle cx="860" cy="985" r="3"/><circle cx="1000" cy="955" r="2"/>
+    <circle cx="1150" cy="975" r="3.5"/><circle cx="1300" cy="960" r="2.5"/>
+    <circle cx="1450" cy="990" r="3"/><circle cx="1600" cy="950" r="2"/>
+    <circle cx="1750" cy="970" r="3.5"/><circle cx="1880" cy="985" r="2.5"/>
+  </g>
+</svg>

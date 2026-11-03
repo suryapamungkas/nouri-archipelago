@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="matchaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4e8c2"/>
+      <stop offset="40%" stop-color="#8fb573"/>
+      <stop offset="100%" stop-color="#4a7c59"/>
+    </linearGradient>
+    <radialGradient id="matchaGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#e8f5d6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4a7c59" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#matchaGrad)"/>
+  <rect width="400" height="500" fill="url(#matchaGlow)"/>
+  <!-- Tea leaf shapes -->
+  <path d="M80 120 Q120 60 160 120 Q120 100 80 120Z" fill="#3a7a50" opacity="0.25" transform="rotate(-15 120 90)"/>
+  <path d="M250 80 Q290 20 330 80 Q290 60 250 80Z" fill="#2d5a3d" opacity="0.2" transform="rotate(10 290 50)"/>
+  <path d="M150 350 Q190 290 230 350 Q190 330 150 350Z" fill="#5a9a6a" opacity="0.15" transform="rotate(-20 190 320)"/>
+  <!-- Swirling tea liquid shapes -->
+  <ellipse cx="200" cy="250" rx="120" ry="80" fill="#5a9a6a" opacity="0.1" transform="rotate(-10 200 250)"/>
+  <ellipse cx="180" cy="280" rx="90" ry="60" fill="#8fb573" opacity="0.12"/>
+  <!-- Steam/aroma curves -->
+  <path d="M160 180 Q170 150 180 180 Q190 210 200 180" fill="none" stroke="#e8f5d6" stroke-width="1.5" opacity="0.3"/>
+  <path d="M200 170 Q210 140 220 170 Q230 200 240 170" fill="none" stroke="#e8f5d6" stroke-width="1.2" opacity="0.25"/>
+  <!-- Circular matcha powder suggestion -->
+  <circle cx="200" cy="260" r="50" fill="#6b9f5a" opacity="0.1"/>
+  <circle cx="200" cy="260" r="35" fill="#8fb573" opacity="0.08"/>
+  <!-- Scattered small leaves -->
+  <g opacity="0.12" fill="#2d5a3d">
+    <ellipse cx="60" cy="400" rx="15" ry="6" transform="rotate(30 60 400)"/>
+    <ellipse cx="340" cy="420" rx="12" ry="5" transform="rotate(-20 340 420)"/>
+    <ellipse cx="100" cy="460" rx="10" ry="4" transform="rotate(45 100 460)"/>
+    <ellipse cx="300" cy="180" rx="13" ry="5" transform="rotate(-35 300 180)"/>
+  </g>
+  <!-- Brand label area -->
+  <rect x="60" y="400" width="280" height="60" rx="4" fill="#2d5a3d" opacity="0.15"/>
+  <text x="200" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#f0f8e8" font-weight="600" letter-spacing="2">GREEN TEA</text>
+  <text x="200" y="448" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#d4e8c2" letter-spacing="3">COLLECTION</text>
+</svg>

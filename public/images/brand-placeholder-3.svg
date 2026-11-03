@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="honeyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5e6b8"/>
+      <stop offset="40%" stop-color="#d4a843"/>
+      <stop offset="100%" stop-color="#a67c2e"/>
+    </linearGradient>
+    <radialGradient id="honeyGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#faf0d4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#a67c2e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#honeyGrad)"/>
+  <rect width="400" height="500" fill="url(#honeyGlow)"/>
+  <!-- Grain/wheat stalks -->
+  <g opacity="0.2" stroke="#8a6820" fill="none" stroke-width="1.5" stroke-linecap="round">
+    <path d="M100 450 Q105 350 110 250 Q112 200 108 150"/>
+    <ellipse cx="108" cy="160" rx="8" ry="18" fill="#c49830" stroke="none" transform="rotate(-10 108 160)"/>
+    <ellipse cx="100" cy="180" rx="7" ry="15" fill="#c49830" stroke="none" transform="rotate(-25 100 180)"/>
+    <ellipse cx="116" cy="175" rx="7" ry="15" fill="#c49830" stroke="none" transform="rotate(15 116 175)"/>
+    <ellipse cx="104" cy="145" rx="6" ry="13" fill="#c49830" stroke="none" transform="rotate(-15 104 145)"/>
+    <ellipse cx="114" cy="150" rx="6" ry="13" fill="#c49830" stroke="none" transform="rotate(20 114 150)"/>
+  </g>
+  <g opacity="0.15" stroke="#8a6820" fill="none" stroke-width="1.5" stroke-linecap="round">
+    <path d="M300 460 Q305 360 310 260 Q312 210 308 160"/>
+    <ellipse cx="308" cy="170" rx="8" ry="18" fill="#b88a28" stroke="none" transform="rotate(8 308 170)"/>
+    <ellipse cx="300" cy="190" rx="7" ry="15" fill="#b88a28" stroke="none" transform="rotate(-20 300 190)"/>
+    <ellipse cx="316" cy="185" rx="7" ry="15" fill="#b88a28" stroke="none" transform="rotate(18 316 185)"/>
+    <ellipse cx="304" cy="155" rx="6" ry="13" fill="#b88a28" stroke="none" transform="rotate(-12 304 155)"/>
+  </g>
+  <!-- Honeycomb hexagon pattern -->
+  <g opacity="0.08" fill="none" stroke="#8a6820" stroke-width="1.2">
+    <polygon points="200,200 220,212 220,236 200,248 180,236 180,212"/>
+    <polygon points="240,212 260,224 260,248 240,260 220,248 220,224"/>
+    <polygon points="160,212 180,224 180,248 160,260 140,248 140,224"/>
+    <polygon points="200,248 220,260 220,284 200,296 180,284 180,260"/>
+    <polygon points="200,152 220,164 220,188 200,200 180,188 180,164"/>
+  </g>
+  <!-- Honey drip shapes -->
+  <path d="M170 300 Q175 310 200 320 Q225 310 230 300 Q228 340 200 355 Q172 340 170 300Z" fill="#d4a843" opacity="0.12"/>
+  <!-- Golden dust particles -->
+  <g fill="#f5e6b8" opacity="0.15">
+    <circle cx="80" cy="100" r="3"/><circle cx="320" cy="80" r="2.5"/>
+    <circle cx="150" cy="60" r="2"/><circle cx="250" cy="120" r="3.5"/>
+    <circle cx="50" cy="200" r="2"/><circle cx="350" cy="250" r="2.5"/>
+    <circle cx="180" cy="380" r="3"/><circle cx="280" cy="400" r="2"/>
+  </g>
+  <!-- Brand label area -->
+  <rect x="60" y="400" width="280" height="60" rx="4" fill="#8a6820" opacity="0.2"/>
+  <text x="200" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#faf0d4" font-weight="600" letter-spacing="2">GOLDEN GRAIN</text>
+  <text x="200" y="448" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#f5e6b8" letter-spacing="3">HARVEST</text>
+</svg>

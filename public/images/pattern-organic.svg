@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Repeatable organic pattern tile - very low opacity botanical shapes -->
+  <defs>
+    <pattern id="organicTile" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <g opacity="0.06" fill="#2d5a3d">
+        <!-- Leaf shape top-left -->
+        <path d="M30 40 Q45 15 60 40 Q45 30 30 40Z"/>
+        <path d="M25 45 Q40 20 55 45 Q40 35 25 45Z" opacity="0.5"/>
+        <!-- Grain/seed top-right -->
+        <ellipse cx="160" cy="30" rx="10" ry="5" transform="rotate(25 160 30)"/>
+        <ellipse cx="175" cy="45" rx="8" ry="4" transform="rotate(-15 175 45)"/>
+        <!-- Small leaf center -->
+        <path d="M95 95 Q110 75 120 95 Q110 88 95 95Z"/>
+        <!-- Dot cluster center-left -->
+        <circle cx="55" cy="110" r="3"/>
+        <circle cx="65" cy="105" r="2.5"/>
+        <circle cx="60" cy="118" r="2"/>
+        <!-- Curved branch bottom-right -->
+        <path d="M140 140 Q155 125 170 135 Q160 130 150 140 Q145 145 140 140Z" opacity="0.7"/>
+        <path d="M155 155 Q168 142 180 150 Q170 146 160 155 Q157 158 155 155Z" opacity="0.5"/>
+        <!-- Grain bottom-left -->
+        <ellipse cx="35" cy="170" rx="9" ry="4" transform="rotate(40 35 170)"/>
+        <ellipse cx="50" cy="180" rx="7" ry="3.5" transform="rotate(-10 50 180)"/>
+        <!-- Tiny leaf accents -->
+        <path d="M130 80 Q138 70 145 80 Q138 76 130 80Z" opacity="0.6"/>
+        <path d="M80 165 Q88 155 96 165 Q88 161 80 165Z" opacity="0.6"/>
+        <!-- Connecting vine curves -->
+        <path d="M60 40 Q80 60 95 95" fill="none" stroke="#2d5a3d" stroke-width="0.5" opacity="0.4"/>
+        <path d="M120 95 Q135 110 140 140" fill="none" stroke="#2d5a3d" stroke-width="0.5" opacity="0.4"/>
+        <!-- Edge-wrapping elements for seamless tiling -->
+        <ellipse cx="5" cy="95" rx="8" ry="4" transform="rotate(20 5 95)"/>
+        <ellipse cx="195" cy="95" rx="8" ry="4" transform="rotate(-20 195 95)"/>
+        <circle cx="100" cy="5" r="2.5"/>
+        <circle cx="100" cy="195" r="2.5"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="200" height="200" fill="url(#organicTile)"/>
+</svg>
