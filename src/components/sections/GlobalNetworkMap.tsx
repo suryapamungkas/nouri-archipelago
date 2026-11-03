@@ -12,6 +12,19 @@ interface GlobalNetworkMapProps {
 
 const JAKARTA_COORDS: [number, number] = [-6.2088, 106.8456];
 
+function checkWebGLSupported(): boolean {
+  if (typeof window === "undefined") return true;
+  try {
+    const canvas = document.createElement("canvas");
+    return Boolean(
+      window.WebGLRenderingContext &&
+        (canvas.getContext("webgl") || canvas.getContext("experimental-webgl"))
+    );
+  } catch {
+    return false;
+  }
+}
+
 export function GlobalNetworkMap({
   compact = false,
   className,
@@ -24,11 +37,11 @@ export function GlobalNetworkMap({
   const [selectedHub, setSelectedHub] = useState<ExportDestinationPoint>(
     EXPORT_DESTINATIONS[0]!
   );
-  const [webglSupported, setWebglSupported] = useState(true);
+  const [webglSupported, setWebglSupported] = useState(() => checkWebGLSupported());
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas || !webglSupported) return;
 
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
@@ -96,7 +109,9 @@ export function GlobalNetworkMap({
 
       rafId = requestAnimationFrame(animateFrame);
     } catch {
-      setWebglSupported(false);
+      queueMicrotask(() => {
+        setWebglSupported(false);
+      });
     }
 
     return () => {
@@ -108,7 +123,7 @@ export function GlobalNetworkMap({
         globe.destroy();
       }
     };
-  }, []);
+  }, [webglSupported]);
 
   const handleSelectHub = (hub: ExportDestinationPoint) => {
     setSelectedHub(hub);

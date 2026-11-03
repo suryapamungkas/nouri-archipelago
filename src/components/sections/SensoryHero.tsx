@@ -257,18 +257,6 @@ export function SensoryHero() {
             className="lg:col-span-5"
           >
             <div className="relative aspect-[4/4.6] w-full rounded-[2rem] overflow-hidden border border-text-primary/12 bg-canvas-dark shadow-[0_32px_80px_-20px_rgba(20,35,25,0.28)] group">
-              {/* Native HTML5 Video Loop with Poster & Instant Fallback + Interactive Scene Image */}
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-                poster={activeScene.image}
-                className="sr-only"
-                aria-hidden="true"
-              />
-
               <AnimatePresence mode="wait">
                 <m.div
                   key={activeScene.id}

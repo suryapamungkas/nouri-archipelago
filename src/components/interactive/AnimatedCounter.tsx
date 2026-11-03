@@ -32,6 +32,8 @@ export function AnimatedCounter({
       "(prefers-reduced-motion: reduce)"
     ).matches;
 
+    let rafId = 0;
+
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
@@ -45,7 +47,6 @@ export function AnimatedCounter({
           }
 
           const startTime = performance.now();
-          let rafId = 0;
 
           const tick = (now: number) => {
             const elapsed = now - startTime;
@@ -63,14 +64,18 @@ export function AnimatedCounter({
           };
 
           rafId = requestAnimationFrame(tick);
-          return () => cancelAnimationFrame(rafId);
         }
       },
       { threshold: 0.25 }
     );
 
     observer.observe(el);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+      }
+    };
   }, [value, durationMs, hasAnimated]);
 
   const formatted =

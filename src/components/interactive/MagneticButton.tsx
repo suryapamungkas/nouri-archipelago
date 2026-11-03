@@ -10,7 +10,6 @@ interface MagneticButtonProps
   strength?: number;
   variant?: "primary" | "accent" | "outline" | "ghost" | "dark";
   size?: "sm" | "md" | "lg";
-  asChild?: boolean;
 }
 
 export function MagneticButton({

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useTransition } from "react";
+import React, { useState, useTransition } from "react";
 import { m, AnimatePresence } from "motion/react";
 import {
   X,
@@ -45,7 +45,10 @@ export function B2BInquiryDrawer() {
   const [isPending, startTransition] = useTransition();
   const [result, setResult] = useState<B2BInquiryActionResult | null>(null);
 
-  useEffect(() => {
+  const [prevPreset, setPrevPreset] = useState<typeof drawerPreset>(null);
+
+  if (drawerPreset !== prevPreset) {
+    setPrevPreset(drawerPreset);
     if (drawerPreset) {
       if (drawerPreset.partnershipType) {
         setPartnershipType(drawerPreset.partnershipType);
@@ -60,7 +63,7 @@ export function B2BInquiryDrawer() {
         setProjectNotes(drawerPreset.contextNote);
       }
     }
-  }, [drawerPreset]);
+  }
 
   const toggleCategory = (cat: string) => {
     setSelectedCategories((prev) =>

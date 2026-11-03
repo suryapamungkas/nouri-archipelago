@@ -5,6 +5,7 @@ import React, {
   useContext,
   useEffect,
   useState,
+  useRef,
   useCallback,
   useMemo,
 } from "react";
@@ -53,7 +54,7 @@ export function SmoothScrollProvider({
   const [drawerPreset, setDrawerPreset] = useState<B2BDrawerPreset | null>(
     null
   );
-  const [lenisInstance, setLenisInstance] = useState<Lenis | null>(null);
+  const lenisRef = useRef<Lenis | null>(null);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -69,7 +70,7 @@ export function SmoothScrollProvider({
       touchMultiplier: 1.5,
     });
 
-    setLenisInstance(lenis);
+    lenisRef.current = lenis;
 
     let rafId = 0;
     function raf(time: number) {
@@ -81,18 +82,18 @@ export function SmoothScrollProvider({
     return () => {
       cancelAnimationFrame(rafId);
       lenis.destroy();
-      setLenisInstance(null);
+      lenisRef.current = null;
     };
   }, []);
 
   useEffect(() => {
-    if (!lenisInstance) return;
+    if (!lenisRef.current) return;
     if (isB2BDrawerOpen) {
-      lenisInstance.stop();
+      lenisRef.current.stop();
     } else {
-      lenisInstance.start();
+      lenisRef.current.start();
     }
-  }, [isB2BDrawerOpen, lenisInstance]);
+  }, [isB2BDrawerOpen]);
 
   const openB2BDrawer = useCallback((preset?: B2BDrawerPreset) => {
     if (preset) {
@@ -107,18 +108,15 @@ export function SmoothScrollProvider({
     setIsB2BDrawerOpen(false);
   }, []);
 
-  const scrollToSection = useCallback(
-    (selector: string) => {
-      const target = document.querySelector(selector);
-      if (!target) return;
-      if (lenisInstance) {
-        lenisInstance.scrollTo(target as HTMLElement, { offset: -88 });
-      } else {
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    },
-    [lenisInstance]
-  );
+  const scrollToSection = useCallback((selector: string) => {
+    const target = document.querySelector(selector);
+    if (!target) return;
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(target as HTMLElement, { offset: -88 });
+    } else {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, []);
 
   const contextValue = useMemo<AppInteractionContextValue>(
     () => ({

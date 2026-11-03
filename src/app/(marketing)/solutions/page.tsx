@@ -1,12 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import {
   Factory,
-  FlaskConical,
-  Ship,
-  ChefHat,
   ArrowUpRight,
   CheckCircle2,
   ShieldCheck,
