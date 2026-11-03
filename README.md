@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NOURI Global Foods
 
-## Getting Started
+> **From Volcanic Equatorial Soil to the World's Table.**  
+> Official enterprise web platform, FMCG brand portfolio, B2B ingredient formulation vault, and radical ESG traceability ledger for **PT Nouri Archipelago Food & Ingredients Tbk**.
 
-First, run the development server:
+---
+
+## 👤 Project Owner & Author
+
+- **Author / Owner**: **Nur Hidayat Surya Pamungkas**
+- **License**: [MIT License](LICENSE) (2026)
+
+---
+
+## 🌟 Key Features
+
+1. **Multi-Audience Experience Architecture**
+   - Seamless navigation tailored for **FMCG Consumers**, **B2B / OEM Enterprise Buyers**, and **Institutional Investors & ESG Auditors**.
+   - Multi-locale switcher (**ID** / **EN** / **GLOBAL Trade Desk**).
+
+2. **Kinetic Editorial Sensory Hero**
+   - Word-by-word staggered reveal typography using `Instrument Serif`, `Plus Jakarta Sans`, and `JetBrains Mono`.
+   - Real-time interactive reel switching across harvest origin, oat/dairy processing, and cleanroom plants.
+   - Micro-telemetry pill navigation with instant smooth routing.
+
+3. **Interactive Brand Showcase & Ambient Morphing**
+   - Filterable consumer portfolio (`VELVETA™`, `KAKAO KULTURA™`, `VERDANTIA™`, `NUTRIFLORA™`, `NUSA SPICE™`).
+   - Smooth layout transitions powered by Motion shared layout indicators.
+   - Dynamic specification sheet modal and instant direct download.
+
+4. **Seed-to-Shelf Traceability Scrollytelling**
+   - Unbroken 4-stage custody pipeline from smallholder agroforestry cooperatives to global cold-chain ports.
+   - Interactive batch lookup passport with simulated live sensor data and GPS coordinates.
+
+5. **Radical ESG Transparency & Net-Zero Trajectory Dashboard**
+   - Audited metrics for Scope 1, 2, 3 & FLAG carbon emissions, closed-loop water recycling, and living-income premiums.
+   - Interactive milestone trajectory scrubber (2020–2040) with industry baseline comparisons.
+   - One-click executive disclosure report downloads (PDF/Text dossiers).
+
+6. **Global Network & 3D Interactive WebGL Globe**
+   - High-performance canvas globe powered by `cobe`, visualizing direct trade routes from Jakarta HQ to Singapore, Rotterdam, and Zurich.
+
+7. **B2B & R&D Sample Request Drawer**
+   - Interactive slide-over drawer with 3-step progressive wizard.
+   - Validated server action handlers with Zod schema verification.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+| :--- | :--- |
+| **Framework** | [Next.js 16](https://nextjs.org/) (App Router, Turbopack) |
+| **Runtime & Language** | [React 19](https://react.dev/), [TypeScript 5](https://www.typescriptlang.org/) |
+| **Styling & Design System** | [Tailwind CSS v4](https://tailwindcss.com/) with OKLCH organic color tokens |
+| **Animations & Smooth Scroll** | [Motion (Framer Motion)](https://motion.dev/), [Lenis](https://lenis.darkroom.engineering/), [GSAP](https://greensock.com/) |
+| **3D & Visualizations** | [Cobe](https://github.com/shuding/cobe) (Interactive WebGL Globe) |
+| **Forms & Validation** | [React Hook Form](https://react-hook-form.com/), [Zod](https://zod.dev/) |
+| **Icons & Media** | [Lucide React](https://lucide.dev/), SVG custom maison monogram |
+| **Database ORM** | [Drizzle ORM](https://orm.drizzle.team/) |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js**: `v20.x` or higher
+- **npm**: `v10.x` or higher (or `pnpm` / `yarn`)
+
+### 1. Clone & Install Dependencies
+
+```bash
+git clone https://github.com/<your-username>/nouri.git
+cd nouri
+npm install
+```
+
+### 2. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to explore the platform.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Production Build & Static Validation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Verify TypeScript types and compile with Turbopack
+npm run build
 
-## Learn More
+# Start production server
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Deploying to GitHub & Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Push to GitHub
 
-## Deploy on Vercel
+1. Initialize and commit your changes:
+   ```bash
+   git add .
+   git commit -m "feat: complete NOURI Global enterprise platform"
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Link your GitHub repository:
+   ```bash
+   git branch -M main
+   git remote add origin https://github.com/<your-username>/nouri.git
+   git push -u origin main
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Deploy to Vercel
+
+1. Import your GitHub repository to [Vercel](https://vercel.com/new).
+2. Framework Preset will automatically detect **Next.js**.
+3. Click **Deploy**. No additional environment variables are required for initial preview.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).  
+Copyright © 2026 **Nur Hidayat Surya Pamungkas**. All rights reserved.

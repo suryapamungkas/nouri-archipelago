@@ -1,0 +1,22 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="46" height="46" rx="9.5" fill="#0B150F" stroke="#D9B36C" stroke-opacity="0.55" stroke-width="1.2" />
+  <rect x="3.8" y="3.8" width="40.4" height="40.4" rx="7" stroke="#D9B36C" stroke-opacity="0.22" stroke-width="0.6" />
+  <path d="M10.5 7.2C10.5 9.1 11.1 9.7 13 9.7C11.1 9.7 10.5 10.3 10.5 12.2C10.5 10.3 9.9 9.7 8 9.7C9.9 9.7 10.5 9.1 10.5 7.2Z" fill="#D9B36C" />
+  <path d="M37.5 35.8C37.5 37.7 38.1 38.3 40 38.3C38.1 38.3 37.5 38.9 37.5 40.8C37.5 38.9 36.9 38.3 35 38.3C36.9 38.3 37.5 37.7 37.5 35.8Z" fill="#D9B36C" />
+  <g fill="#D9B36C">
+    <rect x="21.8" y="8.2" width="6.2" height="1.35" />
+    <path d="M24.2 8.8L25.6 8.8L13.2 33.8L11.7 33.8L24.2 8.8Z" />
+    <path d="M23.8 8.8L27.2 8.8L39.6 33.8L36.1 33.8L23.8 8.8Z" />
+    <rect x="17.2" y="23.4" width="15.8" height="1.4" />
+    <rect x="9.6" y="33.0" width="5.8" height="1.4" />
+    <rect x="34.0" y="33.0" width="6.8" height="1.4" />
+  </g>
+  <g fill="#FAF7F0">
+    <rect x="10.2" y="14.0" width="1.55" height="24.2" />
+    <rect x="27.8" y="14.0" width="1.55" height="24.2" />
+    <path d="M10.2 14.0L14.1 14.0L29.35 38.2L25.6 38.2L10.2 14.0Z" />
+    <rect x="7.5" y="14.0" width="6.8" height="1.45" />
+    <rect x="7.5" y="36.8" width="6.2" height="1.45" />
+    <rect x="25.0" y="14.0" width="6.8" height="1.45" />
+  </g>
+</svg>
