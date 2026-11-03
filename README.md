@@ -1,3 +1,5 @@
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6b5f0320-ddfa-4948-93a4-5f3f49220aa4" />
+
 # NOURI Global Foods
 
 > **From Volcanic Equatorial Soil to the World's Table.**  
